@@ -14,7 +14,7 @@ public class Ejercicio {
     String[]palabrasOriginales = null;
    
   
-    Listaordenada.add("Martinez De Los Santos Isabel");
+    Listaordenada.add("Martinez De Los Santos Isabel: materia de estructura");
         File archivo = null;
       FileReader fr = null;
       BufferedReader br = null;
@@ -50,7 +50,7 @@ public class Ejercicio {
           for (int i = 0; i < palabrasOriginales.length; i++) {
               for (int j = 0; j < palabrasOriginales.length; j++) {
                   if (palabrasOriginales[i].equals(palabrasDeArchivo[j])) {
-                      arreglofinal[i]=palabrasOriginales[i];
+                      arreglofinal[i]=palabrasDeArchivo[j];
                       
                   }
               }
@@ -69,6 +69,7 @@ public class Ejercicio {
       
       catch(Exception e){
          e.printStackTrace();
+  
       }finally{
          
          try{                    
